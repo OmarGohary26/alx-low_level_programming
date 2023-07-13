@@ -9,9 +9,9 @@
 
 int main(void)
 {
-char stt[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+char stt[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-write(1, stt, 45);
+write(1, stt, 70);
 
 return (1);
 }
