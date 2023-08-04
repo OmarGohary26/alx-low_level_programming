@@ -3,7 +3,8 @@
 /**
  * main - Entry point
  * @argc: para
- * @argv[]: para
+ * @argv: para
+ * Return: 0 success
 */
 
 int main(int argc, char const *argv[])
