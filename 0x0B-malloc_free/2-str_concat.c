@@ -6,7 +6,7 @@
  * Return: int
 */
 
-int _strlen(cahr *s)
+int _strlen(char *s)
 {
 	int size = 0;
 
@@ -34,7 +34,7 @@ char *str_concat(char *s1, char *s2)
 		s2 = '\0';
 
 	size1 = _strlen(s1);
-	size2 = _strlen(s2)l
+	size2 = _strlen(s2);
 	m = malloc((size1 + size2) * sizeof(char) + 1);
 	if (m == 0)
 		return (0);
