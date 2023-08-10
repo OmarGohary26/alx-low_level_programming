@@ -31,16 +31,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	int i, j;
 	unsigned int s1_l, s2_l;
 
-	if (s1 == 0)
+	if (s1 == NULL)
 		s1 = "";
-	if (s1 == 0)
+	if (s1 == NULL)
 		s2 = "";
 
 	s1_l = _strlen(s1);
 	s1_l = _strlen(s2);
 
 	s = malloc(s1_l + n + 1);
-	if (s == 0)
+	if (s == NULL)
 	{
 		return (NULL);
 	}
