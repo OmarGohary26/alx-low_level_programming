@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *array_range
+ * *array_range - Entry point
  * @min: para
  * @max: para
  * Return: pointer
