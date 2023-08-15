@@ -3,7 +3,7 @@
 
 /**
  * free_dog - Entry point
- * @d: para
+ * @dog: para
  * Return: void
 */
 
