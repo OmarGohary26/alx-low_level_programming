@@ -5,14 +5,14 @@
 #include <stdlib.h>
 
 /**
- * struct op - Entry point
- * @cal: para
- * @f: func
+ * struct op - Sturct op
+ * @op: The operator
+ * @f: THe function associated
 */
 
 typedef struct op
 {
-	char *cal;
+	char *op;
 	int (*f)(int a, int b);
 } op_t;
 
