@@ -68,7 +68,7 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == tokns[j].token[0])
 			{
-				tokens[j].f(sep, va);
+				tokns[j].f(sep, va);
 				sep = ", ";
 			}
 			j++;
