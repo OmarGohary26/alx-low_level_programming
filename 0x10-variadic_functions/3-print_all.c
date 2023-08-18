@@ -35,7 +35,7 @@ void print_float(char *sep, va_list va)
 */
 void print_string(char *sep, va_list va)
 {
-	char *str = va_arg(va, cahr *);
+	char *str = va_arg(va, char *);
 
 	switch ((int)(!str))
 		case 1:
@@ -52,7 +52,7 @@ void print_all(const char * const format, ...)
 	int i = 0, j;
 	char *sep = "";
 	va_list va;
-	token_t tokns[] = {
+	token_t tokens[] = {
 		{"c", print_char},
 		{"i", print_int},
 		{"f", print_float},
@@ -64,11 +64,11 @@ void print_all(const char * const format, ...)
 	while (format && format[i])
 	{
 		j = 0;
-		while (tokns[j].token)
+		while (tokens[j].token)
 		{
-			if (format[i] == tokns[j].token[0])
+			if (format[i] == tokens[j].token[0])
 			{
-				tokns[j].f(sep, va);
+				tokens[j].f(sep, va);
 				sep = ", ";
 			}
 			j++;
