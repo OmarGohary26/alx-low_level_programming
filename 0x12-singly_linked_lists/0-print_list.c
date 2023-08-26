@@ -1,23 +1,6 @@
 #include "lists.h"
 
 /**
- * _strlen - return the length of a string
- * @s: parameter
- * Return: int
-*/
-
-int _strlen(char *s)
-{
-	int i = 0;
-
-	if (!s)
-		return (0);
-	while (*s++)
-		i++;
-	return (i);
-}
-
-/**
  * print_list - print the list
  * @h: para
  * Return: size of list
@@ -25,13 +8,20 @@ int _strlen(char *s)
 
 size_t print_list(const list_t *h)
 {
-	size_t i = 0;
+	int i;
 
-	while (h)
+	if (h == NULL)
+		return (0);
+	for (i = 1; h->next != NULL; i++)
 	{
-		printf("[%i] %s\n", _strlen(h->str), h->str ? h->str : "(nil)");
+		if (h->str == NULL)
+			printf("[%u] %s\n", h->str, "(nil)");
+		else
+		{
+			 printf("[%u] %s\n", h->str, h->str);
+		}
 		h = h->next;
-		i++;
 	}
+	printf("[%u] %s\n", h->str, "(nil)");
 	return (i);
 }
