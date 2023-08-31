@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_binary - prints a binary 
+ * print_binary - prints a binary
  * @n: para
  * Return: void
 */
